@@ -1,15 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --background-head: rgb(230, 230, 230, 0.8);
-    --background-one: #e2e2e2;
-    --background-two: #e6e6e6;
+  --background-head: rgb(184, 184, 184, 0.9);
+  --background-one: #f7f8fc;
+  --background-two: #D6D6D6;
 }
 
-@import 'header';
-@import 'quemSomos';
-@import 'cifras';
+@import "header";
+@import "quemSomos";
+@import "cifras";
+@import "contato";
+@import "footer";

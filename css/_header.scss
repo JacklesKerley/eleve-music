@@ -84,7 +84,7 @@
     .menuMobileSeta {
       display: flex;
       align-items: center;
-      background-color: var(--background-two);
+      background-color: var(--background-head);
       color: black;
       height: 8vh;
       padding: 10px;
@@ -111,7 +111,6 @@
 
           &:hover {
             background-color: var(--background-two);
-            color: rgb(182, 182, 182);
           }
         }
       }
