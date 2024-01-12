@@ -60,7 +60,7 @@
   border-bottom: 1px solid grey;
 }
 .header .menuSanduiche {
-  display: flex;
+  display: none;
   flex-direction: row-reverse;
   padding-right: 15px;
   width: 30%;
@@ -69,6 +69,11 @@
 .header .menuSanduiche :hover {
   color: grey;
   cursor: pointer;
+}
+@media (max-width: 985px) {
+  .header .menuSanduiche {
+    display: flex;
+  }
 }
 .header .menuMobile {
   position: fixed;
