@@ -4,17 +4,18 @@
   align-items: center;
   position: fixed;
   width: 100%;
-  height: 7vh;
-
-  @media (max-width: 1186px) {
-    display: flex;
-    justify-content: space-between;
-  }
+  height: 6vh;
 
   .logo {
     width: 30%;
 
-    @media (max-width: 760px) {
+    @media (max-width: 1186px) {
+      width: 40%;
+      order: 2;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
       width: 70%;
     }
 
@@ -34,6 +35,15 @@
 
   .navbar {
     width: 40%;
+
+    @media (max-width: 1186px) {
+      width: 30%;
+      order: 1;
+    }
+
+    @media (max-width: 600px) {
+      width: 15%;
+    }
 
     ul {
       display: flex;
@@ -60,28 +70,38 @@
             border-bottom: 1px solid grey;
           }
         }
+        @media (max-width: 1186px) {
+          display: none;
+        }
       }
-    }
-    
-    @media (max-width: 1186px) {
-      display: none;
     }
   }
 
   .menuSanduiche {
-    display: none;
+    display: flex;
     flex-direction: row-reverse;
     padding-right: 15px;
     width: 30%;
     transition: 0.7s all;
+    font-size: 22px;
+
+    @media (max-width: 1186px) {
+      order: 3;
+    }
+
+    @media (max-width: 600px) {
+      width: 15%;
+    }
 
     :hover {
       color: grey;
       cursor: pointer;
     }
 
-    @media (max-width: 1185px) {
-      display: flex;
+    i {
+      @media (min-width: 1185px) {
+        display: none;
+      }
     }
   }
 
@@ -136,7 +156,6 @@
 }
 
 .home {
-  // background-color: yellow;
   width: 100%;
   height: 95vh;
 
