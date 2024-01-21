@@ -167,9 +167,15 @@
   align-items: center;
 }
 .home .containerFoto img {
-  width: 500px;
-  height: 500px;
+  width: 700px;
+  height: 700px;
   border-radius: 50%;
+}
+@media (max-width: 1980px) {
+  .home .containerFoto img {
+    width: 500px;
+    height: 500px;
+  }
 }
 @media (max-width: 630px) {
   .home .containerFoto img {
@@ -193,33 +199,93 @@
   margin: 10vh auto 80px;
   border-bottom: 1px solid black;
 }
+@media (max-width: 630px) {
+  .quemSomos h2 {
+    margin: 10vh auto 15px;
+  }
+}
 .quemSomos .conteudo {
   width: 70%;
   margin: 20px auto;
 }
+@media (max-width: 1186px) {
+  .quemSomos .conteudo {
+    width: 85%;
+  }
+}
+@media (max-width: 630px) {
+  .quemSomos .conteudo {
+    width: 100%;
+  }
+}
 .quemSomos .conteudo .caixaOne, .quemSomos .conteudo .caixaTwo, .quemSomos .conteudo .caixaThree {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 30px;
 }
 .quemSomos .conteudo .caixaOne p, .quemSomos .conteudo .caixaTwo p, .quemSomos .conteudo .caixaThree p {
-  display: flex;
-  align-items: center;
-  width: 50%;
-  margin: 20px;
   padding: 5px;
-  text-align: justify;
   font-size: 18px;
   line-height: 30px;
-  text-indent: 30px;
+  text-align: justify;
+}
+@media (min-width: 631px) {
+  .quemSomos .conteudo .caixaOne p, .quemSomos .conteudo .caixaTwo p, .quemSomos .conteudo .caixaThree p {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 20px;
+    padding: 5px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+    text-indent: 30px;
+  }
 }
 .quemSomos .conteudo .caixaOne .img1, .quemSomos .conteudo .caixaTwo .img1, .quemSomos .conteudo .caixaThree .img1 {
-  width: 30%;
+  width: 300px;
+  height: 300px;
   border-radius: 30% 0 0 30%;
+  order: 2;
+}
+@media (max-width: 1186px) {
+  .quemSomos .conteudo .caixaOne .img1, .quemSomos .conteudo .caixaTwo .img1, .quemSomos .conteudo .caixaThree .img1 {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 630px) {
+  .quemSomos .conteudo .caixaOne .img1, .quemSomos .conteudo .caixaTwo .img1, .quemSomos .conteudo .caixaThree .img1 {
+    width: 150px;
+    height: 150px;
+    padding: 10px 5px 0 8px;
+    float: inline-end;
+  }
 }
 .quemSomos .conteudo .caixaOne .img2, .quemSomos .conteudo .caixaTwo .img2, .quemSomos .conteudo .caixaThree .img2 {
-  width: 30%;
+  width: 300px;
+  height: 300px;
   border-radius: 0 30% 30% 0;
+}
+@media (max-width: 1186px) {
+  .quemSomos .conteudo .caixaOne .img2, .quemSomos .conteudo .caixaTwo .img2, .quemSomos .conteudo .caixaThree .img2 {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 630px) {
+  .quemSomos .conteudo .caixaOne .img2, .quemSomos .conteudo .caixaTwo .img2, .quemSomos .conteudo .caixaThree .img2 {
+    width: 150px;
+    height: 150px;
+    padding: 10px 8px 0 5px;
+    float: inline-start;
+  }
+}
+@media (max-width: 630px) {
+  .quemSomos .conteudo .caixaOne, .quemSomos .conteudo .caixaTwo, .quemSomos .conteudo .caixaThree {
+    display: block;
+  }
 }
 
 .cifra {
