@@ -109,7 +109,7 @@
   color: grey;
   cursor: pointer;
 }
-@media (min-width: 1185px) {
+@media (min-width: 1187px) {
   .header .menuSanduiche i {
     display: none;
   }
