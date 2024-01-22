@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 90vh;
+  min-height: 95vh;
   background-color: var(--background-two);
 
   h2 {
@@ -12,13 +12,23 @@
     letter-spacing: 2px;
     margin: 10vh auto 80px;
     border-bottom: 1px solid black;
+
+    // @media (max-width: 630px) {
+    //   margin: 10vh auto 15px;
+    // }
   }
 
   p {
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
     font-size: 32px;
     font-weight: bold;
     margin-top: 5%;
+
+    @media (max-width: 630px) {
+      font-size: 28px;
+    }
   }
 
   .redesSociais {
@@ -26,9 +36,28 @@
     justify-content: center;
     align-items: center;
 
-    img {
-      width: 100px;
-      margin: 50% 20px;
+    a {
+      #instagram {
+        width: 80px;
+        height: 80px;
+        margin: 50% 20px;
+
+        @media (max-width: 630px) {
+          width: 60px;
+          height: 60px;
+        }
+      }
+  
+      #youtube {
+        width: 80px;
+        height: 80px;
+        margin: 50% 20px;
+
+        @media (max-width: 630px) {
+          width: 60px;
+          height: 60px;
+        }
+      }
     }
   }
 }
